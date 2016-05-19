@@ -1,0 +1,41 @@
+body {
+  background-color: orange;
+  text-align: center;
+}
+
+td {
+  height: 60px;
+  width: 60px;
+  background-image:url("http://24.media.tumblr.com/tumblr_m8pd6uijos1qgawlzo1_500.gif");
+  background-size: cover;
+}
+
+table {
+  border-size: 1px;
+  border-style: dashed;
+  border-color: green;
+  margin-left: auto;
+  margin-right: auto;
+  align: center;
+}
+
+
+
+.tableContainer {
+  text-align: center;
+}
+
+.miss {
+  background-image:url("http://www.clipartbest.com/cliparts/LcK/rMA/LcKrMAkEi.jpeg");
+  background-size: cover;
+}
+
+.destroyed {
+  background-image: url("http://www.planetdeadly.com/wp-content/uploads/massive-nuclear-explosion.jpg");
+  background-size: cover;
+}
+
+.showShip {
+  background-image: url("http://images.freeimages.com/images/premium/previews/3674/36746882-cartoon-cruise-ship.jpg");
+  background-size: cover;
+}

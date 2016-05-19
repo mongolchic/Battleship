@@ -6,17 +6,22 @@ body {
 td {
   height: 60px;
   width: 60px;
-  background-image:url("http://24.media.tumblr.com/tumblr_m8pd6uijos1qgawlzo1_500.gif");
-  background-size: cover;
+  border: 1px solid grey;
+
+
 }
 
 table {
   border-size: 1px;
-  border-style: dashed;
-  border-color: green;
+  border-style: solid;
+  border-color: black;
   margin-left: auto;
   margin-right: auto;
   align: center;
+  background-image:url("http://thumbs.dreamstime.com/z/ocean-waves-seamless-pattern-18754624.jpg");
+  background-size: 800px 800px;
+  border-collapse: collapse;
+
 }
 
 
@@ -26,16 +31,25 @@ table {
 }
 
 .miss {
-  background-image:url("http://www.clipartbest.com/cliparts/LcK/rMA/LcKrMAkEi.jpeg");
-  background-size: cover;
+  background-image:url("http://www.clipartbest.com/cliparts/McL/L7p/McLL7pkKi.png");
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .destroyed {
-  background-image: url("http://www.planetdeadly.com/wp-content/uploads/massive-nuclear-explosion.jpg");
-  background-size: cover;
+  background-image: url("http://www.clipartbest.com/cliparts/pi5/oLR/pi5oLR49T.png");
+  background-size: 60px 60px;
+  background-position: center;
 }
 
 .showShip {
   background-image: url("http://images.freeimages.com/images/premium/previews/3674/36746882-cartoon-cruise-ship.jpg");
-  background-size: cover;
+  background-size: 80px 60px;
+  background-position: center;
+}
+.showSubmarine {
+  background-image: url("http://www.drawingnow.com/file/videos/image/how-to-draw-a-submarine.jpg");
+  background-size: 80px 60px;
+  background-position: center;
 }

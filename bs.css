@@ -1,6 +1,7 @@
 body {
   background-color: orange;
   text-align: center;
+  font-family: 'Orbitron', sans-serif;
 }
 
 td {
@@ -8,23 +9,46 @@ td {
   width: 60px;
   border: 1px solid grey;
 
-
 }
 
 table {
   border-size: 1px;
   border-style: solid;
   border-color: black;
-  margin-left: auto;
-  margin-right: auto;
-  align: center;
   background-image:url("http://thumbs.dreamstime.com/z/ocean-waves-seamless-pattern-18754624.jpg");
   background-size: 800px 800px;
   border-collapse: collapse;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.statusHead {
+  height:25px;
+}
 
+.col1 {
+  height: 25px;
+  width: 150px;
+}
+
+.tinyLifeStatusCell {
+  height: 25px;
+  width: 25px;
+  border: none;
+}
+
+.full {
+    background-image: url("http://orig02.deviantart.net/8baa/f/2012/058/0/5/8_bit_heart_stock_by_xquatrox-d4r844m.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.shipStatus {
+  background-image: none;
+  float: right;
+  margin-top: 60px;
+  margin-right: 120px;
+}
 
 .tableContainer {
   text-align: center;
@@ -52,4 +76,11 @@ table {
   background-image: url("http://www.drawingnow.com/file/videos/image/how-to-draw-a-submarine.jpg");
   background-size: 80px 60px;
   background-position: center;
+}
+.container {
+  margin-left:auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }

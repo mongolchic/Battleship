@@ -170,7 +170,6 @@ $(document).ready(function(){ // Load content after page load
   // End checkCoordinates function
 
 
-
   //////Begin checkifSunk function (checking to see if anything is sunk)
   // Signature: String (with digits) -> Nothing
   // Purpose: Check to see if the last torpedo sunk a ship and update UI to show ...

@@ -1,30 +1,27 @@
 body {
-  background-color: #052E3E;
+  background-color: #003333;
   text-align: center;
-  font-family: 'Shojumaru', cursive;
-  color: white;
+  font-family: 'Audiowide', cursive;
+  color: #A7DFDF;
 }
 
 h1 {
-  font-family: 'Shojumaru', cursive;
-  font-size: 62px;
-  color: white;
+  font-family: 'Audiowide', cursive;
+  font-size: 68px;
+  color: #A7DFDF;
 }
 
 td {
   height: 60px;
   width: 60px;
   border: 1px solid grey;
-
 }
 
 table {
   border-size: 1px;
   border-style: solid;
   border-color: black;
-  background-image:url("http://67.media.tumblr.com/89cb3620e47420d58a632385b35ade22/tumblr_npo52qUnxJ1tqycmxo1_1280.jpg");
-  background-size: 800px 800px;
-  border-collapse: collapse;
+  background-color: #B2E0E0;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -32,18 +29,20 @@ table {
 }
 
 #display #display2 {
-  font-family: 'Bungee Shade', cursive;
-  font-size: 30px;
-  color: white;
+  font-family: 'Audiowide', cursive;
+  font-size: 50px;
+  color: #A7DFDF;
 }
 
 .statusHead {
-  height:25px;
+  height:28px;
+  border: none;
 }
 
 .col1 {
   height: 25px;
   width: 150px;
+  border: none;
 }
 
 .tinyLifeStatusCell {
@@ -59,14 +58,14 @@ table {
 }
 
 .shipStatus {
-  font-family: 'Baloo Chettan', cursive;
+  font-family: 'Audiowide', cursive;
   background-image: none;
-  background-color: #CCDCE1;
-  color: black;
-  font-size: 13px;
-  float: right;
-  margin-top: 150px;
-  margin-right: 120px;
+  background-color: #000F0F;
+  color: white;
+  font-size: 14px;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .tableContainer {
@@ -101,5 +100,13 @@ table {
   margin-right: auto;
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
+}
+.counter {
+  margin: auto;
+  margin-top: 170px;
+  border: 1px solid white;
+  width: 150px;
+  height: 100px;
+  background-color: #001313;
+  padding: 3px;
 }

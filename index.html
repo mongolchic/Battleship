@@ -2,108 +2,110 @@
 <html>
   <head>
     <meta charset="utf-8">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="bs.css" type="text/css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
     <script src="bs.js" type="text/javascript"></script>
     <title>Epic Battleship</title>
   </head>
   <body>
-
     <h1>Epic Battleship</h1>
-
     <div class="container">
-      <div>
-        <table id="viewBoard">
-        </table>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-2">
+          <div class="counter">
+            <p id="display"></p>
+            <p id="display2"></p>
+          </div>
+        </div>
+          <table id="viewBoard" class="col-xs-12 col-sm-12 col-md-6">
+          </table>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <table class="shipStatus" id="table2">
+            <thead>
+              <td class="statusHead">Ship</td>
+              <td class="statusHead" colspan="5">Life</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col1">Aircraft Carrier</td>
+                <td class="tinyLifeStatusCell full five0"></td>
+                <td class="tinyLifeStatusCell full five1"></td>
+                <td class="tinyLifeStatusCell full five2"></td>
+                <td class="tinyLifeStatusCell full five3"></td>
+                <td class="tinyLifeStatusCell full five4"></td>
+              </tr>
+              <tr>
+                <td class="col1">Frigate</td>
+                <td class="tinyLifeStatusCell full four10"></td>
+                <td class="tinyLifeStatusCell full four11"></td>
+                <td class="tinyLifeStatusCell full four12"></td>
+                <td class="tinyLifeStatusCell full four13"></td>
+                <td class="tinyLifeStatusCell"></td>
+              </tr>
+              <tr>
+                <td class="col1">Corvette</td>
+                <td class="tinyLifeStatusCell full four20"></td>
+                <td class="tinyLifeStatusCell full four21"></td>
+                <td class="tinyLifeStatusCell full four22"></td>
+                <td class="tinyLifeStatusCell full four23"></td>
+                <td class="tinyLifeStatusCell"></td>
+              </tr>
+              <tr>
+                <td class="col1">Destroyer</td>
+                <td class="tinyLifeStatusCell full three10"></td>
+                <td class="tinyLifeStatusCell full three11"></td>
+                <td class="tinyLifeStatusCell full three12"></td>
+                <td class="tinyLifeStatusCell"></td>
+                <td class="tinyLifeStatusCell"></td>
+              </tr>
+              <tr>
+                <td class="col1">Marvin</td>
+                <td class="tinyLifeStatusCell full three20"></td>
+                <td class="tinyLifeStatusCell full three21"></td>
+                <td class="tinyLifeStatusCell full three22"></td>
+                <td class="tinyLifeStatusCell"></td>
+                <td class="tinyLifeStatusCell"></td>
+              </tr>
+              <tr>
+                <td class="col1">Raptor</td>
+                <td class="tinyLifeStatusCell full two10"></td>
+                <td class="tinyLifeStatusCell full two11"></td>
+                <td class="tinyLifeStatusCell"></td>
+                <td class="tinyLifeStatusCell"></td>
+                <td class="tinyLifeStatusCell"></td>
+              </tr>
+              <tr>
+                <td class="col1">Tugboat</td>
+                <td class="tinyLifeStatusCell full two20"></td>
+                <td class="tinyLifeStatusCell full two21"></td>
+                <td class="tinyLifeStatusCell"></td>
+                <td class="tinyLifeStatusCell"></td>
+                <td class="tinyLifeStatusCell"></td>
+              </tr>
+              <tr>
+                <td class="col1">Submarine</td>
+                <td class="tinyLifeStatusCell full one0"></td>
+                <td class="tinyLifeStatusCell"></td>
+                <td class="tinyLifeStatusCell"></td>
+                <td class="tinyLifeStatusCell"></td>
+                <td class="tinyLifeStatusCell"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-
-      <div>
-        <table class="shipStatus" id="table2">
-          <thead>
-            <td class="statusHead">Ship</td>
-            <td class="statusHead" colspan="5">Life</td>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="col1">Aircraft Carrier</td>
-              <td class="tinyLifeStatusCell full five0"></td>
-              <td class="tinyLifeStatusCell full five1"></td>
-              <td class="tinyLifeStatusCell full five2"></td>
-              <td class="tinyLifeStatusCell full five3"></td>
-              <td class="tinyLifeStatusCell full five4"></td>
-            </tr>
-            <tr>
-              <td class="col1">Frigate</td>
-              <td class="tinyLifeStatusCell full four10"></td>
-              <td class="tinyLifeStatusCell full four11"></td>
-              <td class="tinyLifeStatusCell full four12"></td>
-              <td class="tinyLifeStatusCell full four13"></td>
-              <td class="tinyLifeStatusCell"></td>
-            </tr>
-            <tr>
-              <td class="col1">Corvette</td>
-              <td class="tinyLifeStatusCell full four20"></td>
-              <td class="tinyLifeStatusCell full four21"></td>
-              <td class="tinyLifeStatusCell full four22"></td>
-              <td class="tinyLifeStatusCell full four23"></td>
-              <td class="tinyLifeStatusCell"></td>
-            </tr>
-            <tr>
-              <td class="col1">Destroyer</td>
-              <td class="tinyLifeStatusCell full three10"></td>
-              <td class="tinyLifeStatusCell full three11"></td>
-              <td class="tinyLifeStatusCell full three12"></td>
-              <td class="tinyLifeStatusCell"></td>
-              <td class="tinyLifeStatusCell"></td>
-            </tr>
-            <tr>
-              <td class="col1">Marvin</td>
-              <td class="tinyLifeStatusCell full three20"></td>
-              <td class="tinyLifeStatusCell full three21"></td>
-              <td class="tinyLifeStatusCell full three22"></td>
-              <td class="tinyLifeStatusCell"></td>
-              <td class="tinyLifeStatusCell"></td>
-            </tr>
-            <tr>
-              <td class="col1">Raptor</td>
-              <td class="tinyLifeStatusCell full two10"></td>
-              <td class="tinyLifeStatusCell full two11"></td>
-              <td class="tinyLifeStatusCell"></td>
-              <td class="tinyLifeStatusCell"></td>
-              <td class="tinyLifeStatusCell"></td>
-            </tr>
-            <tr>
-              <td class="col1">Tugboat</td>
-              <td class="tinyLifeStatusCell full two20"></td>
-              <td class="tinyLifeStatusCell full two21"></td>
-              <td class="tinyLifeStatusCell"></td>
-              <td class="tinyLifeStatusCell"></td>
-              <td class="tinyLifeStatusCell"></td>
-            </tr>
-            <tr>
-              <td class="col1">Submarine</td>
-              <td class="tinyLifeStatusCell full one0"></td>
-              <td class="tinyLifeStatusCell"></td>
-              <td class="tinyLifeStatusCell"></td>
-              <td class="tinyLifeStatusCell"></td>
-              <td class="tinyLifeStatusCell"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
     </div>
-    <!-- <input type="button" value="Show Ships" id="show"/> -->
-    <p id="display"></p>
-    <p id="display2"></p>
-    <!-- <div class="shipBoard">
-      <p>Five Block Ships = <span class="fiveBlockLeft">1</span></p>
-      <p>Four Block Ships = <span class="fourBlockLeft">2</span></p>
-      <p>Three Block Ships = <span class="threeBlockLeft">2</span></p>
-      <p>Two Block Ships = <span class="twoBlockLeft">2</span></p>
-      <p>Submarines = <span class="oneBlockLeft">1</span></p>
-    </div> -->
+    <input type="button" value="Show Ships" id="show" class="btn btn-danger"/>
   </body>
 </html>

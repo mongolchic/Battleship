@@ -309,8 +309,6 @@ $(document).ready(function(){ // Load content after page load
 
 
 
-
-
   // Testing section
   makeBoard();
   pickShipLocations();

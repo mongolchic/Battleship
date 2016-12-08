@@ -121,12 +121,13 @@
       }
       .counter {
         margin: auto;
-        margin-top: 170px;
+        margin-top: 130px;
+        margin-bottom: 50px;
         border: 1px solid white;
-        width: 150px;
-        height: 100px;
+        width: 160px;
+        height: 110px;
         background-color: #001313;
-        padding: 3px;
+        padding: 10px;
       }
     </style>
     <h1>Epic Battleship</h1>
@@ -136,6 +137,9 @@
           <div class="counter">
             <p id="display"></p>
             <p id="display2"></p>
+          </div>
+          <div>
+            <input type="button" value="Show Ships" id="show" class="btn btn-danger"/>
           </div>
         </div>
           <table id="viewBoard" class="col-xs-12 col-sm-12 col-md-6">
@@ -216,6 +220,6 @@
         </div>
       </div>
     </div>
-    <input type="button" value="Show Ships" id="show" class="btn btn-danger"/>
+
   </body>
 </html>
